@@ -5,3 +5,15 @@ hello.content:
     _title: 'Hello World'
   requirements:
     _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+hello.byecontent:
+  path: '/bye'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\ByeController::content'
+    _title: 'Bye World'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
