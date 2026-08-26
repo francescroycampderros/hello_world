@@ -1,6 +1,15 @@
 {# [module]/templates/my-template.html.twig #}
- 
-<p>We are going to send you the booklet to: {{ test_var }}</p>
 
-<a href="bye">Yes, I want to continue receveing booklets in this address!</a>
+{% if found == true %}
+ 
+    <p>We are going to send you the booklet to: {{ address }}</p>
+
+    <a href="bye">Yes, I want to continue receveing booklets in this address!</a>
+
+    <p> If the address is not correct, send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
 	
+{% else %}
+
+    <p>Something went wrong. Send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
+
+{% endif %}
