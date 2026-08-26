@@ -18,9 +18,9 @@ class HelloController extends ControllerBase{
 
     $request = \Drupal::request();
 
-    $id = $request->query->get('id');
+    $cid = $request->query->get('cid');
     $dni = $request->query->get('dni');
-    //\Drupal::logger('my_module')->info('The id is "'.$id. '" and the dni "'.$dni.'"');
+    //\Drupal::logger('my_module')->info('The cid is "'.$cid. '" and the dni "'.$dni.'"');
     
     $dni_uppercase = "";
     $dni_lowercase = "";
@@ -31,7 +31,7 @@ class HelloController extends ControllerBase{
 
     $contacts = Contact::get(FALSE)
     ->addSelect('id', 'display_name', 'email_primary.email', 'address_primary.street_address')
-    ->addWhere('id', '=', intval($id))
+    ->addWhere('id', '=', intval($cid))
     ->addWhere('external_identifier', 'IN', [$dni_uppercase, $dni_lowercase])
     ->execute();
 
@@ -53,6 +53,8 @@ class HelloController extends ControllerBase{
       '#theme' => 'my_template',
       '#address' => $address,
       '#found' => $found,
+      '#cid' => $cid,
+      '#dni' => $dni,
     ];
 
   }

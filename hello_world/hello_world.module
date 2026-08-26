@@ -9,6 +9,13 @@ function hello_world_theme($existing, $type, $theme, $path) {
       'variables' => [
         'address' => NULL,
         'found' => NULL,
+        'cid' => NULL,
+        'dni' => NULL,
+      ],
+    ],
+    'my_template-2' => [
+      'variables' => [
+        'created' => NULL,
       ],
     ],
   ];
