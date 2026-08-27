@@ -33,7 +33,9 @@ root@11011a6c3d2c:/var/www/hola.com# chmod 777 example.log
 
 // TODO:
 
-Posar adreça completa - falta poble, codi postal, pais
-També a la segona pantalla!
+Posar adreça completa - falta poble, codi postal, pais - Done
+També a la segona pantalla! - Done
+Mirar de crear be l'activitat segons el format CJ... - Done
 Multi-idioma
 Estil professional repositori
+Estils CSS?

@@ -18,6 +18,10 @@ function hello_world_theme($existing, $type, $theme, $path) {
     ],
     'my_template-2' => [
       'variables' => [
+        'address' => NULL,
+        'postal_code' => NULL,
+        'city' => NULL,
+        'country' => NULL,
         'created' => NULL,
       ],
     ],
