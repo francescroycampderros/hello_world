@@ -39,3 +39,4 @@ Mirar de crear be l'activitat segons el format CJ... - Done
 Multi-idioma
 Estil professional repositori
 Estils CSS?
+Podria ser el hash del contacte en comptes del dni? -> {contact.hash}, que al correu és Marques del contacte.
