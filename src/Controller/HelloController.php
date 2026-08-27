@@ -42,6 +42,5 @@ class HelloController extends ControllerBase{
       '#cid' => $cid,
       '#dni' => $dni,
     ];
-
   }
 }

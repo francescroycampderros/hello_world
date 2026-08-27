@@ -21,16 +21,15 @@ class ByeController extends ControllerBase{
 
     $cid = $request->query->get('cid');
     $dni = $request->query->get('dni');
-    \Drupal::logger('my_module')->info('The cid is "'.$cid. '" and the dni "'.$dni.'"');
+    //\Drupal::logger('my_module')->info('The cid is "'.$cid. '" and the dni "'.$dni.'"');
 
-    
     $contacts = SqlQueries::getContactIfExist($cid, $dni);
 
     $created = false;
 
     if(sizeof($contacts) != 0){
       
-      // TODO: Crear activitat, pero si ja se n'ha creat una en els ultims 5 minuts, no.
+      // TODO: Avoid creating activity if an activity has already been created in last 5 minutes.
       $results = Activity::create(FALSE)
       ->addValue('activity_type_id', 3)
       ->addValue('source_contact_id', intval($cid))
@@ -39,12 +38,9 @@ class ByeController extends ControllerBase{
       $created = true;
     }
 
-    
-
     return [
       '#theme' => 'my_template-2',
       '#created' => $created,
     ];
-
   }
 }
