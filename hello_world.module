@@ -8,6 +8,9 @@ function hello_world_theme($existing, $type, $theme, $path) {
     'my_template' => [
       'variables' => [
         'address' => NULL,
+        'postal_code' => NULL,
+        'city' => NULL,
+        'country' => NULL,
         'found' => NULL,
         'cid' => NULL,
         'dni' => NULL,

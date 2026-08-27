@@ -29,3 +29,11 @@ root@11011a6c3d2c:/var/www/hola.com# chmod 777 example.log
 
 
 */
+
+
+// TODO:
+
+Posar adreça completa - falta poble, codi postal, pais
+També a la segona pantalla!
+Multi-idioma
+Estil professional repositori

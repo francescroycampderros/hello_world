@@ -25,19 +25,25 @@ class HelloController extends ControllerBase{
     $contacts = SqlQueries::getContactIfExist($cid, $dni);
 
     $address = "";
+    $postal_code = "";
+    $city = "";
+    $country = "";
     $found = false;
 
-    if(sizeof($contacts) != 0){
-      $found = true;
-    }
-
     foreach ($contacts as $contact) {
-      $address .= $contact['address_primary.street_address'];
+      $found = true;
+      $address .= $contact['address.street_address'];
+      $postal_code .= $contact['address.postal_code'];
+      $city .= $contact['address.city'];
+      $country .= $contact['country.name'];
     }
 
     return [
       '#theme' => 'my_template',
       '#address' => $address,
+      '#city' => $city,
+      '#postal_code' => $postal_code,
+      '#country' => $country,
       '#found' => $found,
       '#cid' => $cid,
       '#dni' => $dni,

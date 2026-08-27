@@ -24,7 +24,9 @@ final class SqlQueries
         }
 
         $contacts = Contact::get(FALSE)
-        ->addSelect('id', 'display_name', 'email_primary.email', 'address_primary.street_address')
+        ->addSelect('*', 'address.*', 'country.*')
+        ->addJoin('Address AS address', 'LEFT')
+        ->addJoin('Country AS country', 'LEFT')
         ->addWhere('id', '=', intval($cid))
         ->addWhere('external_identifier', 'IN', [$dni_uppercase, $dni_lowercase])
         ->execute();
