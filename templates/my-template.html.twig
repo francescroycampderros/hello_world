@@ -2,7 +2,14 @@
 
 {% if found == true %}
  
-    <p>We are going to continue sending you the booklets to: <strong>{{ address }}, {{city}}, {{postal_code}}, {{country}}</strong></p>
+    <p>We are going to continue sending you the booklets to:</p> 
+    
+    <ul>
+        <li><strong>Address: {{ address }}</strong></li>
+        <li><strong>City: {{city}}</strong></li>
+        <li><strong>Postal code: {{postal_code}}</strong></li>
+        <li><strong>Country: {{country}}</strong></li>
+    </ul>
 
     <a class="button" style="display: flex; justify-content: center; margin-left:60px; margin-right:60px" href="bye?cid={{ cid }}&hash={{ hash }}">Click here if you want to continue receveing booklets in this address!</a>
 

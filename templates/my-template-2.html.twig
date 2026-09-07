@@ -2,9 +2,16 @@
 
 {% if created == true %}
  
-    <p>Thank you for your feedback!</p>
+    <h3>Thank you for your feedback!</h3>
 
-    <p>We are going to continue sending you the booklets to: <strong>{{ address }}, {{city}}, {{postal_code}}, {{country}}</strong></p>
+    <p>We are going to continue sending you the booklets to:</p>
+
+    <ul>
+        <li><strong>Address: {{ address }}</strong></li>
+        <li><strong>City: {{city}}</strong></li>
+        <li><strong>Postal code: {{postal_code}}</strong></li>
+        <li><strong>Country: {{country}}</strong></li>
+    </ul>
 
     <p> If the address is not correct, send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
 
