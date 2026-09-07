@@ -37,7 +37,10 @@ Posar adreça completa - falta poble, codi postal, pais - Done
 També a la segona pantalla! - Done
 Mirar de crear be l'activitat segons el format CJ... - Done
 Podria ser el hash del contacte en comptes del dni? -> {contact.hash}, que al correu és Marques del contacte - done
-Multi-idioma
+Multi-idioma - almost done
+Posar foto de quaderns a la segona template
+Falta link a la segona template...
 Estil professional repositori
 Estils CSS?
+
 

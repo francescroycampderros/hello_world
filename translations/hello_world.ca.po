@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: your_module\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid 'Address'
+msgstr 'Direcció'
+
+msgid 'We are going to continue sending you the booklets to'
+msgstr 'Continuarem enviant els quaderns a'
+
+msgid 'City'
+msgstr 'Ciutat'
+
+msgid 'Postal code'
+msgstr 'Codi postal'
+
+msgid 'Country'
+msgstr 'País'
+
+msgid 'Click here if you want to continue receiving booklets at this address!'
+msgstr 'Feu clic aquí si voleu continuar rebent els fullets en aquesta adreça!'
+
+msgid 'If the address is not correct, send an email to'
+msgstr "Si l'adreça no és correcte, envia un correu a"
+
+msgid 'Something went wrong. Send an email to'
+msgstr 'Alguna cosa ha anat malament. Envieu un correu electrònic a'
+
+msgid 'You can also support us here'
+msgstr 'També pot fer-nos suport aquí'
+
+msgid 'Make a donation!'
+msgstr 'Fes un donatiu!'
+
+msgid '"en/donatives"'
+msgstr '"donatius"'

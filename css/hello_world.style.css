@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   padding: 14px 24px;
-  background-color: #a02020;
+  background-color: #D52027;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -28,4 +28,16 @@
 .submit-button:focus {
   outline: 2px solid #d9534f;
   outline-offset: 2px;
+}
+
+
+.my-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.my-link:hover,
+.my-link:visited,
+.my-link:active {
+  color: #ffffff;
+  text-decoration: none;
 }

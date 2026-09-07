@@ -4,3 +4,7 @@ package: Custom
 type: module
 version: 1.0
 core_version_requirement: ">=8"
+
+# Interface translation configuration
+'interface translation project': hello_world
+'interface translation server pattern': 'modules/custom/hello_world/translations/%project.%language.po'
