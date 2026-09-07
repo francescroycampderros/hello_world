@@ -19,10 +19,10 @@ class HelloController extends ControllerBase{
     $request = \Drupal::request();
 
     $cid = $request->query->get('cid');
-    $dni = $request->query->get('dni');
-    //\Drupal::logger('my_module')->info('The cid is "'.$cid. '" and the dni "'.$dni.'"');
+    $hash = $request->query->get('hash');
+    //\Drupal::logger('my_module')->info('The cid is "'.$cid. '" and the hash "'.$hash.'"');
  
-    $contacts = SqlQueries::getContactIfExist($cid, $dni);
+    $contacts = SqlQueries::getContactIfExist($cid, $hash);
 
     $address = "";
     $postal_code = "";
@@ -46,7 +46,7 @@ class HelloController extends ControllerBase{
       '#country' => $country,
       '#found' => $found,
       '#cid' => $cid,
-      '#dni' => $dni,
+      '#hash' => $hash,
     ];
   }
 }

@@ -36,7 +36,8 @@ root@11011a6c3d2c:/var/www/hola.com# chmod 777 example.log
 Posar adreça completa - falta poble, codi postal, pais - Done
 També a la segona pantalla! - Done
 Mirar de crear be l'activitat segons el format CJ... - Done
+Podria ser el hash del contacte en comptes del dni? -> {contact.hash}, que al correu és Marques del contacte - done
 Multi-idioma
 Estil professional repositori
 Estils CSS?
-Podria ser el hash del contacte en comptes del dni? -> {contact.hash}, que al correu és Marques del contacte.
+

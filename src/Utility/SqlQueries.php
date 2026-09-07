@@ -14,21 +14,15 @@ final class SqlQueries
         // Prevent instantiation
     }
 
-    public static function getContactIfExist($cid, $dni)
+    public static function getContactIfExist($cid, $hash)
     {
-        $dni_uppercase = "";
-        $dni_lowercase = "";
-        if($dni != NULL){
-            $dni_uppercase = strtoupper($dni);
-            $dni_lowercase = strtolower($dni);
-        }
 
         $contacts = Contact::get(FALSE)
         ->addSelect('*', 'address.*', 'country.*')
         ->addJoin('Address AS address', 'LEFT')
         ->addJoin('Country AS country', 'LEFT')
         ->addWhere('id', '=', intval($cid))
-        ->addWhere('external_identifier', 'IN', [$dni_uppercase, $dni_lowercase])
+        ->addWhere('hash', '=', $hash)
         ->execute();
 
         return $contacts;
