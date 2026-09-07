@@ -1,0 +1,5 @@
+hello_world.style:
+  version: 1.x
+  css:
+    theme:
+      css/hello_world.style.css: {}

@@ -1,5 +1,7 @@
 {# [module]/templates/my-template.html.twig #}
 
+{{ attach_library('hello_world/hello_world.style') }}
+
 {% if found == true %}
  
     <p>We are going to continue sending you the booklets to:</p> 
@@ -10,8 +12,7 @@
         <li><strong>Postal code: {{postal_code}}</strong></li>
         <li><strong>Country: {{country}}</strong></li>
     </ul>
-
-    <a class="button" style="display: flex; justify-content: center; margin-left:60px; margin-right:60px" href="bye?cid={{ cid }}&hash={{ hash }}">Click here if you want to continue receveing booklets in this address!</a>
+    <a class="submit-button" href="bye?cid={{ cid }}&hash={{ hash }}">Click here if you want to continue receveing booklets in this address!</a>
 
     <p> If the address is not correct, send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
 	
