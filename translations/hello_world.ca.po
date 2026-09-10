@@ -36,5 +36,8 @@ msgstr 'També pot fer-nos suport aquí'
 msgid 'Make a donation!'
 msgstr 'Fes un donatiu!'
 
-msgid '"en/donatives"'
+msgid '"donatives"'
 msgstr '"donatius"'
+
+msgid 'Thank you for your feedback!'
+msgstr 'Gracies per la teva resposta!'

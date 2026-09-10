@@ -2,21 +2,23 @@
 
 {% if created == true %}
  
-    <h3>Thank you for your feedback!</h3>
+    <h3>{{ 'Thank you for your feedback!'|trans }}</h3>
 
-    <p>We are going to continue sending you the booklets to:</p>
+    <p>{{ 'We are going to continue sending you the booklets to'|trans }}:</p> 
 
     <ul>
-        <li><strong>Address: {{ address }}</strong></li>
-        <li><strong>City: {{city}}</strong></li>
-        <li><strong>Postal code: {{postal_code}}</strong></li>
-        <li><strong>Country: {{country}}</strong></li>
+        <li><strong>{{ 'Address'|trans }}: {{ address }}</strong></li>
+        <li><strong>{{ 'City'|trans }}: {{city}}</strong></li>
+        <li><strong>{{ 'Postal code'|trans }}: {{postal_code}}</strong></li>
+        <li><strong>{{ 'Country'|trans }}: {{country}}</strong></li>
     </ul>
+    <!---->
 
-    <p> If the address is not correct, send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
+    <p> {{ 'If the address is not correct, send an email to'|trans }} <a style="color:#D52027" href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
+    <p> {{ 'You can also support us here'|trans }}: <a style="color:#D52027" href={{ '"donatives"'|trans }}>{{ 'Make a donation!'|trans }}</a></p>
 
 {% else %}
 
-    <p>Something went wrong. Send an email to <a href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
+    <p>{{ 'Something went wrong. Send an email to'|trans }} <a style="color:#D52027" href="mailto:quaderns@fespinal.com">quaderns@fespinal.com</a></p>
 
 {% endif %}

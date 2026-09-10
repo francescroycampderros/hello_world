@@ -35,3 +35,9 @@ msgstr 'También nos puedes ayudar aquí'
 
 msgid 'Make a donation!'
 msgstr '¡Haz un donativo!'
+
+msgid '"donatives"'
+msgstr '"donativos"'
+
+msgid 'Thank you for your feedback!'
+msgstr '¡Gracias por tu respuesta!'
